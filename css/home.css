@@ -1,0 +1,770 @@
+body
+{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	width:auto;
+	background-image:url("C:/soho2/soho_slike2/drvo4.jpg");
+	background-size:cover;
+	 background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	
+	
+}
+.hideme{opacity:0;}
+/*******************HEADER I HOME***************************/
+
+#header_slika
+{	
+	background-image: url("C:/soho2/soho_slike2/may.jpg");
+	height: 100%;
+	background-size:cover;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	z-index:0;
+	position:relative;
+	background-attachment: fixed;
+	border-bottom-radius:5px;
+	border-bottom: 5px groove #D4AA7D;
+}
+
+header
+{
+	width: 100%;
+	height: 90px;
+	position:fixed;
+	top:0px;
+	transition: all ease .5s;
+	z-index:1000;
+	background-color:white;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+header.change
+{
+	transition: all ease .5s;
+	height:59px;
+}
+
+.aktivan
+{
+	background-color:#D4AA7D;
+}
+#naslov
+{
+	position:absolute;
+	width:350px;
+	height:350px;
+	left:50%;
+	margin-left:-175px;
+	top:50%;
+	margin-top:-175px;
+}
+#okvir
+{
+	position:absolute;
+	top: 20;
+	border-radius:2px;
+	box-shadow: 2px 2px 2px black;
+	width:250;
+	height:230;
+	border: 2px solid white;
+	left:50;
+}
+#sohohouse
+{
+	font-size:60;
+	color:white;
+	text-shadow: 2px 2px 2px black;
+	position:absolute;
+	top: 20;
+	left:60;
+}
+#circle
+{
+	z-index:9999999999;
+	width:160;
+	height:160;
+	position:absolute; 
+	bottomm:10;
+
+	top:200;
+	left:100;
+}
+#circle .curve
+{
+  position:absolute;
+  border-radius:50%; 
+  width:110px; 
+  border: 2px solid white; 
+  height:110px;
+  top:5;
+  left:20;
+  box-shadow: 2px 2px 2px black;
+}
+
+.nav
+{
+	position:fixed;
+	height: 91px;
+	width: 100%;
+	visibility:visible;
+	
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	z-index:1;
+}
+nav.promena{
+	height:59px;
+	transition: all ease .5s;
+	z-index:1;
+}
+.nav ul
+{
+	height:100%;
+	position:absolute;
+	list-style-type: none;
+	padding-left:0%;
+	margin-top:0;
+	margin-bottom:0;
+	z-index:1;
+}
+.nav ul li
+{	
+    position:relative;
+	float:left;
+	height:100%;
+	display: table;
+	z-index:1;
+}
+nav ul li .a1
+{
+	z-index:1;
+	padding-left:10px;
+	padding-right:10px;
+	display: table-cell;
+	vertical-align:middle;
+	text-decoration:none;
+	font-size:17;
+	letter-spacing:2px;
+	color: black;
+	text-align:center;
+	height:100%;
+}
+
+/*------------------HAMBURGER MENI--------------------------------------*/
+.menu {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 35px;
+  width: 35px;
+}
+#hamburger
+{
+	visibility:hidden;
+}
+.menu-overlay {
+  background-color:white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display:none;	
+  /*transition: opacity 1s, visibility: 0s 1s;*/
+  text-align: center;
+  z-index: 3;
+  top:0;
+}
+.menu-link {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 4;
+}
+
+.menu.open .menu-circle {
+  transform: scale(60);
+}
+.menu-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+.menu-line {
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu-line-1 { top: 0; }
+
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu-line-3 { bottom: 0; }
+
+.menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-135deg);
+}
+
+.menu.open .menu-line-2 {
+  opacity: 0;
+}
+
+.menu.open .menu-line-3 {
+  transform: translateY(-7px) translateY(50%) rotate(135deg);
+}
+.vidljivost
+{
+	visibility:hidden;
+}
+.menu-overlay a {
+  color: #333;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 30px;
+  display:block;
+  text-decoration:none;
+  letter-spacing:2px;
+}
+/***************************** O NAMA ************************/
+#onama
+{
+	width:100%;
+	height:100vh;
+	position:relative;
+	margin-top:200px;
+
+}
+#onama_container
+{
+	background-color: #FFF275;
+	top:140px;
+	position:absolute;
+	height:500px;
+	width:600px;
+	left:50%;
+	box-shadow: 5px 5px 6px 6px #202021;
+	border-radius:50%;
+	margin-left:-300px;
+	
+
+}
+#o_naslov
+{
+	font-size:50;
+	text-align:center;
+	font-weight:100;
+	color:black;
+	position:absolute;
+	top:60px;
+	width:100%;
+	
+}
+#onama_tekst
+{
+	position:absolute;
+	bottom:120px;
+	text-align:center;
+	font-size:20;
+	padding-left:70px;
+	padding-right:70px;
+	color:black;
+}
+/******************************* M E N I ******************************************/
+#flajer_strelica
+{
+	position:absolute;
+	width:500px;
+	height:600px;
+	top:70px;
+	left:50%;
+	margin-left:-250px;
+}
+#flajer
+{
+	position:absolute;
+	top:30px;
+	left:55px;
+	z-index:2;
+	box-shadow: 2px 2px 4px 4px #202021;
+	border-radius: 5px;
+}
+#m7{
+	width:940px;height:100%;  left:50%; margin-left:-470px;
+}
+.sakrijnavelikom{display:none;}
+.sakrijnamalom{display:block;}
+#strelica
+{
+	font-size:40;
+	position:absolute;
+	top:260px;
+	right:10;
+	color:#f9f8f4;
+	text-shadow: 4px 5px 3px #202021;
+	
+	/*transition: all 0.25s 0.25s;*/
+}
+#strelica:hover
+{
+	cursor:pointer;
+	color:#ddd1b3;
+	transition:0.25s;
+}
+.toggle-down {
+  transform: rotate(0deg);
+}
+.toggle-up {
+  transform: rotate(180deg);
+}
+.sakrivene
+{
+	display:none;
+	position:fixed;
+	max-width:100%;
+	height:auto;
+	top:0;
+	z-index:5;
+	margin:auto;
+	left:0;right:0;bottom:0;
+}
+#xdugme
+{
+	position:fixed;
+	z-index:5;
+	top:5px; right:50%;margin-right:-17px;
+	display:none;
+	font-size:35;
+	color:#d87700;
+	
+}
+#xdugme:hover
+{
+	cursor:pointer;
+	color:#ffa332;
+	transition: 0.25s;
+}
+#zatamnjenje
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity:0.7;
+	top:0;left:0;
+	z-index:3;
+	display:none;
+	
+}
+
+#meniul
+{
+	position:absolute;
+	top: 85px;
+	left: 50%;
+	margin-left:-190px;
+	width:310px;
+	padding-left:0;
+	z-index:1;
+
+
+
+}
+.meni
+{
+	width:370px;
+	padding-left:10px;
+	height: 35px;
+	background-color: #f9f8f4;
+	color:black;
+	list-style-type: none;
+	margin-top: 10px;
+	border-radius:3px;
+	padding-top:20px;
+	z-index:1;
+	
+
+
+}
+
+/****************************** G A L E R I J A ***************************************/
+#wrapper {z-index:50;
+  position: relative;
+  width: 550px;
+  height:550;
+  top:20;
+  }
+
+.rslides {z-index:50;
+  margin: 0 auto 40px;
+  }
+.callbacks_container {z-index:50;
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+.callbacks {z-index:50;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+.callbacks li {z-index:50;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+.callbacks img { z-index:50;
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+ border:0;
+ 
+  }
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: url("C:/soho2/themes/themes.gif") no-repeat left top;
+  margin-top: -45px;
+  z-index:1500;
+  }
+.callbacks_nav:active { z-index:1000;
+  opacity: 1.0;
+  }
+.callbacks_nav.next { z-index:1000;
+  left:auto;
+  background-position: right top;
+  right: 0;
+  }
+/****************************** K O N T A K T ******************************/
+
+#meni{
+	height: 100vh; 
+	position:relative;
+	z-index:809;
+	width:100%;
+	margin-top:150px;
+	margin-bottom:150px;
+
+}
+#galerija
+{
+	position:relative;
+	margin-bottom:200;
+	height:100vh;
+	width:100%;
+
+}
+
+#kontakt
+{	
+	width:100%;
+	height:100vh;
+	position:relative;
+
+}
+#kontakt_container
+{
+	
+	background-color: #FFF275;
+	position:absolute;
+	height:580px;
+	width:760px;
+	border-radius:50%;
+	box-shadow: 5px 5px 6px 6px #202021;
+	left:50%;
+	margin-left:-380px;
+	top:100;
+}
+
+#rezervisite_naslov
+{
+	position:absolute;
+	font-size:45;
+	text-align:center;
+	top:40;
+	width:100%;
+	text-align:center;
+	font-weight:100;
+}
+#trireda
+{
+	position:absolute;
+	width:300px;
+	left:50%;
+	margin-left:-150px;
+	top:220;
+}
+#trireda p {font-size:23;margin:7;}
+#trireda a {font-size: 23; margin:7; color:black; text-decoration:none;}
+#insta
+{
+	position:relative;
+	top:13px;
+}
+#instafb a {color:black;}
+.centriraj2
+{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+}
+#pratite_novosti
+{
+	position:absolute;
+	top: 380;
+	width:100%;
+	text-align:center;
+}
+.pokazisakrij
+{
+	visibility:hidden;
+}
+#instafb
+{
+	position:absolute;
+	top:440;
+	width:120;
+	left:50%;
+	margin-left:-60px;
+}
+.centriraj2 #instafb a
+{
+	padding: 5px;
+}
+a:hover
+{
+	cursor:pointer;
+}
+#donas_container
+{
+	position:relative;
+	width:100%;
+	height:90%;
+	top:200;
+}
+#do_nas
+{
+	text-shadow:3px 4px 4px black;
+	font-size:50;
+	letter-spacing:2px;
+	text-align:center;
+	font-weight:100;
+	color:white;
+	
+}
+#map_container
+{
+	position:absolute;
+	width:100%;
+	height:300px;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+#map
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+/************************ MEDIA UPITI *******************************/
+@media only screen and (max-width: 580px) {
+ 
+   .callbacks_nav {top: 47%;}
+   header{height:50px;box-shadow: 0px 3px 8px gray;}
+   #header_slika{background-image: url("C:/soho2/soho_slike2/may2.jpg");}
+   body{background-image:url("C:/soho2/soho_slike2/drvo5.jpg"); height:100%;}
+   #wrapper{padding-top:120;}
+   #hamburger{visibility:visible;}
+   .nav{visibility:hidden;}
+   #glavni_naslov{font-size:17; bottom:2.5px;left:50;}
+}
+@media only screen and (max-width: 550px) {
+	#wrapper{width:300px;}
+	.callbacks_container{box-shadow: 3px 3px 4px 4px #202021;border: 5px solid #D4AA7D; border-radius:5px; margin-left:-5px;}
+	}
+
+@media only screen and (max-width: 600px) {
+	#flajer{width:300px;height:auto;left:50%;margin-left:-150px;}
+	#meniul{left:50%;margin-left:-150;top:80; display:none;}
+	#meni{height:170vh;}
+	.meni{width:290px; padding-top:10px; padding-bottom:20; height:20px;}
+	#xdugme{top:10;right:10;margin-right:0;}
+  .sakrivene{
+	width:100%;height:auto; left:0;margin-left:0;
+	}
+	#flajer_strelica{width:320px; left:50%; margin-left:-160px;}
+	#strelica{top:470px; right:50%; margin-right:-20px;transform: rotate(90deg);}
+	.sakrijnavelikom{display:block;}
+	.sakrijnamalom{display:none;}
+ 
+	#onama{top:-60;}
+	#onama_container{height:350;width:350;margin-left:-175px;}
+	#onama_tekst{font-size:15; text-align:center;padding-left:20; padding-right:20; bottom:60;}
+	#o_naslov{font-size:40; top:40;}
+	#donas_container{top:0;}
+	#kontakt{top:-200px;}
+	#7{display:none;}
+	#rezervisite_naslov{color:white; text-shadow: 3px 4px 4px black; font-size:35;}
+	#kontakt_container{left:0;margin:0;border-radius:0; width:100%; box-shadow:none; background:none;}
+	#do_nas{font-size:40; position:relative; top:50;}
+	 #map_container{height:160px; position:relative; top:50;}
+	 #trireda p { color:white; text-shadow: 3px 4px 4px black;}
+	#trireda a {color:white; text-shadow: 3px 4px 4px black;}
+	i{color:white; text-shadow: 3px 4px 4px black;}
+	#pratite_novosti{color:white; text-shadow: 3px 4px 4px black;}
+}	
+@media only screen and (min-width: 580px) {
+	#wrapper{
+		border: 10px groove #D4AA7D;
+		box-shadow: 5px 5px 6px 6px #202021;
+		border-radius:5px;
+	}
+
+}
+/**********************HOVER EFFECTS****************************************/
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+ /* display: inline-block;
+  vertical-align: middle;*/
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+   -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/*fade*/
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active, .hvr-fade:active  {
+  background-color: #D4AA7D;
+  color: white;
+}
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #D4AA7D;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.meni:hover{cursor:pointer;}
